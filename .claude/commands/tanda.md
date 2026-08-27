@@ -5,9 +5,13 @@ argument-hint: [opcional: qué hay en la tanda, ej "páginas 70-78 en texto" o "
 
 Tanda nueva. $ARGUMENTS
 
-El material está en `material/` (si vino como texto, en los `.md`; si
-vino como imágenes, en la raíz de la carpeta). No entres a
-`material/visto/`: eso ya está explicado.
+El material está en `material/` (si vino como texto extraído con
+`pdftotext`, en los `.md`; si vino como imágenes, en la raíz de la
+carpeta). No entres a `material/visto/`: eso ya está explicado.
+
+El manual está en INGLÉS y no lo domino: cada término o frase que cites
+va con su traducción al lado, sin excepciones, y los términos nuevos
+van a la tabla VOCABULARIO de `GUIA.md`.
 
 Aplicá el **flujo por tanda** completo de CLAUDE.md (no lo leas con
 Read: ya lo tenés cargado), respetando el presupuesto de contexto:

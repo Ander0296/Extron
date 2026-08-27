@@ -8,9 +8,15 @@ material/
 .claude/settings.local.json
 .atl/
 
-# Compilados/temporales típicos (Claude agrega los del tema en el MENSAJE 0)
-*.class
-__pycache__/
+# Red de seguridad de copyright: los manuales de Extron son PDF y no
+# pueden subirse NUNCA, ni aunque queden fuera de material/ por error.
+*.pdf
+
+# Temporales típicos de este tema
+*.bak
+*.tmp
+~$*
+extron-tanda-*.txt
 
 # Basura del sistema
 .DS_Store

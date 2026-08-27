@@ -16,13 +16,20 @@ Si no te dije de qué, elegí 2-3 conceptos de CONCEPTOS DOMINADOS en
    respuesta a esta pregunta: no.
 2. **Una pregunta por vez, y esperás.** Nada de listas de 5 preguntas: eso lo
    contesto salteado y me miento solo.
-3. Mezclá tipos de pregunta (adaptalos a este tema — los definiste en el
-   `/setup`):
-   - **aplicar**: un caso concreto que tengo que resolver, con una trampa real
-   - **detectar el error**: algo mal hecho, de los errores que ya cometí
+3. Mezclá estos tipos de pregunta (son los de este tema):
+   - **caso de sala**: un escenario concreto con una trampa real
+     ("la imagen se ve en el monitor de la sala pero no en el proyector")
+     y tengo que decir qué verifico y en qué orden
+   - **trazar la señal**: describime el camino de la señal en este montaje
+   - **detectar el error**: un conexionado o una configuración mal hecha,
+     preferentemente del tipo de error que ya cometí
    - **explicámelo con tus palabras**: sin usar la palabra que lo define
+     (ej: explicá EDID sin decir "EDID")
    - **elegí entre A y B y justificá**: sin respuesta única; se evalúa el
-     argumento, no la opción
+     argumento (ej: extensor DTP vs cable HDMI largo)
+   - **traducción técnica**: qué significa este término o esta frase del
+     manual en inglés — este tipo va SIEMPRE en todo examen, porque el
+     idioma es una barrera real de este proyecto
 4. Cuando conteste: veredicto directo. Bien, a medias o mal, y POR QUÉ. Si
    contesté con la palabra correcta pero sin entender, decímelo — eso es
    justo lo que este comando existe para detectar.

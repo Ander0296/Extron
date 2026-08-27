@@ -1,4 +1,4 @@
-# PLANTILLA PROFESOR — aprender {{TEMA}} con Claude Code
+# PLANTILLA PROFESOR — aprender equipos AV Extron con Claude Code
 
 Sistema de estudio con Claude Code como profesor particular: yo le paso
 el material por tandas (texto de un libro, pantallazos, docs...), él lo
@@ -20,12 +20,14 @@ profe me dice cuál sigue. Tampoco escribo comandos de git: los hace él.
 ## El mapa en 30 segundos
 
 ```
-{{NOMBRE-CARPETA}}/
+Extron/
 ├── material/        acá dejo la tanda de hoy (NO va a git: copyright)
 │   └── visto/       lo ya explicado — lo archiva Claude solo
 ├── ejercicios/      mis prácticas. Claude deja el ENUNCIADO + el
 │   │                prompt de entrega; la solución la escribo yo
 │   └── repasos/     los repasos, siempre desde cero
+├── fichas/          una ficha por equipo Extron real de mi empresa,
+│                    escritas por mí. El entregable del proyecto
 ├── ToDo/            checklists: qué verificar antes de dar algo por
 │                    terminado (los mantiene Claude)
 ├── GUIA.md        ★ lo que ENTENDÍ, sesión a sesión
@@ -61,7 +63,7 @@ Da igual si vengo a estudiar material nuevo, a entregar una práctica o
 a hacer un repaso. **Siempre es lo mismo:**
 
 ```
-[TERMINAL]  cd ~/Proyectos/{{NOMBRE-CARPETA}}
+[TERMINAL]  cd ~/Proyectos/Extron
 [TERMINAL]  armo la tanda en material/  (ver "Cómo armar una tanda")
 [TERMINAL]  claude
 [CLAUDE]    /arranque
@@ -134,8 +136,15 @@ misma página en texto, y encima Claude lo lee con menos precisión.
 | MIXTA (aunque sea 1 imagen)    | como imágenes| 1                 |
 
 Cómo paso una tanda de TEXTO (lo más barato y lo preferido):
-- Copio el texto del libro/curso y lo pego en un archivo nuevo:
-  `material/tanda.md` (o `tanda-01.md`, `tanda-02.md`...).
+- Los manuales de Extron son PDF con texto seleccionable, así que el
+  camino normal es sacar el texto con `pdftotext`:
+
+```
+pdftotext -f 12 -l 20 -layout manual.pdf material/tanda.md
+```
+
+  (`-f 12 -l 20` = de la página 12 a la 20; `-layout` respeta columnas
+  y tablas.) También puedo copiar y pegar a mano si son pocas páginas.
 - Le pongo marcas de dónde viene, para que Claude pueda anunciarlas:
   una línea `## PÁGINA 70` (o Ubicación, minuto, sección) antes de
   cada pedazo. Con eso puedo seguir el material con la vista.
@@ -167,7 +176,7 @@ me lo dice el profe (ver "quién decide qué", más abajo).
 ### PASO 1 — preparo el material `[TERMINAL]`
 
 ```
-cd ~/Proyectos/{{NOMBRE-CARPETA}}
+cd ~/Proyectos/Extron
 ```
 
 Y dejo la tanda en `material/`: el texto copiado en un `.md`, o los
@@ -194,7 +203,7 @@ vencieron y qué toca hoy. Y termina con un bloque así:
 
 ```
 ▶ SIGUE: explicar las páginas 70-78 (tanda de texto, 8 páginas)
-  1. /rename {{PREFIJO}}-s08
+  1. /rename extron-s08
   2. /tanda
 ```
 
@@ -297,7 +306,7 @@ ahí el que rinde mal es el contexto, no yo.
 # SI SE CERRÓ LA TERMINAL SIN QUERER (mismo día)
 # ============================================================
 
-`[TERMINAL]` `claude --resume {{PREFIJO}}-sNN`
+`[TERMINAL]` `claude --resume extron-sNN`
 Solo para retomar el MISMO día. Día nuevo = sesión nueva.
 
 # ============================================================

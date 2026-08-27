@@ -15,7 +15,7 @@ set -u
 
 # Carpetas donde vive el trabajo del usuario. El /setup agrega acá las que
 # sume el tema (diagramas/, grabaciones/, redacciones/...).
-CARPETAS_PROTEGIDAS='/(ejercicios)/'
+CARPETAS_PROTEGIDAS='/(ejercicios|fichas)/'
 
 entrada=$(cat)
 herramienta=$(printf '%s' "$entrada" | jq -r '.tool_name // empty')

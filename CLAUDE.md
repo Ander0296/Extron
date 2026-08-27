@@ -1,11 +1,11 @@
-## Proyecto: {{NOMBRE-CARPETA}} — aprender {{TEMA}}
+## Proyecto: Extron — aprender los equipos AV Extron
 
 ### Qué es y objetivo
 
 Proyecto de aprendizaje creado desde la plantilla-profesor. El usuario
-estudia {{TEMA}} usando {{MATERIAL PRINCIPAL}}, haciendo TODA la
+estudia equipos AV Extron usando los manuales oficiales de Extron (PDF), haciendo TODA la
 práctica a mano. Claude actúa como profesor particular y asistente de
-estudio. Objetivo final del usuario: {{OBJETIVO FINAL}}.
+estudio. Objetivo final del usuario: manejar y diagnosticar solo los equipos Extron de su empresa.
 
 El usuario NO copia mensajes ni escribe comandos de git: todo se hace
 con los comandos de `.claude/commands/`, y Claude siempre termina
@@ -43,9 +43,13 @@ Cuando el usuario corra `/setup` con sus datos, Claude debe:
 
 ### Nivel del usuario (IMPORTANTE)
 
-- Nivel de partida: {{NIVEL DE PARTIDA}}. No asumir NINGÚN
-  conocimiento previo salvo eso y lo registrado en GUIA.md o Engram.
-- Idioma del material: {{IDIOMA}}. Si el usuario NO lo domina: TODA
+- Nivel de partida: MUY BÁSICO. Solo lo que le enseñaron sus
+  compañeros de trabajo sobre la marcha, sin base formal de AV. No sabe
+  qué modelos Extron hay en su empresa: los va descubriendo y avisando.
+  No asumir NINGÚN conocimiento previo salvo eso y lo registrado en
+  GUIA.md o Engram. En particular, NO dar por sabido: qué es EDID,
+  HDCP, escalado, señal balanceada, HDBaseT, RS-232 ni subred.
+- Idioma del material: INGLÉS, y el usuario NO lo domina. Por lo tanto: TODA
   frase o término citado del material va acompañado AL LADO de su
   traducción al español entre paréntesis. Sin excepciones.
 - Explicar paso a paso, con analogías de la vida real cuando ayuden.
@@ -118,9 +122,39 @@ que el profe piense mejor, no para que hable menos.
 
 ### Principio de priorización (Pareto 80/20) — REGLA PERMANENTE
 
-- {{LISTA PARETO: la define Claude en el setup según tema y objetivo
-  — a qué darle más profundidad, práctica y preguntas, y qué es
-  "contexto, no para dominar"}}
+EL PRINCIPIO DE FONDO: el usuario no sabe qué modelos tiene y van a ir
+apareciendo equipos nuevos. Por eso NO se estudian modelos: se estudia
+lo que es COMÚN a toda caja Extron (recibe una señal, le hace algo, la
+manda a otro lado). El modelo se lee del manual el día que aparece.
+
+EL 80% DEL VALOR — acá va la profundidad, la práctica y las preguntas:
+
+1. CADENA DE SEÑAL (signal flow): fuente → matriz/switcher → escalador
+   → extensor → pantalla. Saber dibujar el camino resuelve la mayoría
+   de los incidentes. Es el concepto madre: todo lo demás cuelga de acá.
+2. CONECTORES Y SUS LÍMITES: HDMI, DisplayPort, USB-C, HDBaseT sobre
+   CATx, VGA, audio balanceado (Phoenix/euroblock) vs desbalanceado,
+   RS-232. Qué lleva cada uno y hasta qué distancia.
+3. EDID Y HDCP: la causa número uno de "pantalla negra". Sin esto no se
+   diagnostica nada.
+4. RESOLUCIÓN, ESCALADO Y ASPECT RATIO: por qué la imagen sale cortada,
+   negra, borrosa o con bandas.
+5. ACCESO Y CONFIGURACIÓN POR IP: IP por defecto del equipo, interfaz
+   web, Toolbelt, PCS, contraseñas por defecto, reset de fábrica.
+6. DIAGNÓSTICO SISTEMÁTICO: LEDs de estado, panel frontal, aislar por
+   partes, sustituir de a un elemento. Método, no adivinanza.
+7. AUDIO BÁSICO: ganancia, mute, mic vs línea, embed/de-embed de HDMI.
+8. CONTROL: qué hace un procesador de control, cómo el touch panel
+   manda órdenes (SIS, Simple Instruction Set), RS-232 vs IP.
+9. LEER UN MANUAL EXTRON EN INGLÉS: su estructura fija (Introduction /
+   Installation / Operation / Reference / Specifications) y el
+   vocabulario que se repite. En este proyecto esto es una habilidad
+   central, no un accesorio.
+
+CONTEXTO, NO PARA DOMINAR — se menciona, se ubica y se sigue:
+programación en Global Configurator / GC Pro, especificaciones
+eléctricas y dimensiones de rack, part numbers, líneas discontinuadas,
+DSP profundo (filtros, AEC, ecualización paramétrica).
 - Nada se omite; solo se ajustan ritmo y detalle según su peso real.
 - Ante la duda, decirlo explícitamente ("esto es más bien contexto").
 
@@ -131,6 +165,69 @@ que el profe piense mejor, no para que hable menos.
   entrada (salvo pedido explícito).
 - EJERCICIOS.md registra dos tipos: prácticas del material pendientes
   y prácticas extra creadas por Claude cuando el tema lo amerite.
+
+### Este tema en concreto — formato, prácticas y herramientas
+
+**FORMATO DEL MATERIAL (por defecto: TEXTO).** Los manuales de Extron
+son PDF con texto seleccionable. La regla es dura: el texto se extrae
+con `pdftotext` a `material/tanda.md` y se marca cada página con una
+línea `## PÁGINA NN`. El PANTALLAZO se reserva SOLO para lo que el
+texto plano no puede transmitir: diagramas de conexionado, dibujos de
+panel frontal/trasero, tablas de pinout y capturas de software. Una
+página en texto cuesta 3-4 veces menos que la misma en imagen, y se lee
+con más precisión.
+
+**TIPOS DE PRÁCTICA de este tema.** Todos en `.md`, archivo de arranque
+en `ejercicios/`:
+
+| Tipo | Qué hace el usuario |
+| --- | --- |
+| TRAZADO DE SEÑAL | Dado un escenario, escribe el camino completo de la señal, equipo por equipo y conector por conector |
+| CASO DE FALLA | Dado un síntoma ("se ve pero no se oye"), escribe el árbol de hipótesis ORDENADO y qué verifica primero |
+| FICHA DE EQUIPO | Toma un equipo REAL de su empresa y arma su ficha estándar en `fichas/` |
+| TRADUCCIÓN TÉCNICA | Traduce y explica con sus palabras un fragmento del manual en inglés |
+| EQUIPO REAL | Cuando pueda y sea seguro: hace algo en un equipo y registra qué hizo, qué esperaba y qué pasó |
+
+**CÓMO SE PRUEBA una práctica acá**: ver la regla en "Reglas de
+trabajo" (checklist → manual → equipo real si es seguro → explicarlo en
+voz alta).
+
+**CARPETA `fichas/`** — el entregable acumulativo del proyecto: una
+ficha por modelo Extron que el usuario encuentre en su empresa, más
+`fichas/README.md` como inventario. Está PROTEGIDA por el candado: las
+escribe el usuario, Claude solo crea el archivo de arranque vacío con
+la plantilla de ficha. Al terminar el proyecto, esa carpeta es el
+manual interno de los equipos de su empresa.
+
+**HERRAMIENTAS** (verificadas en el setup del 2026-08-27, todas OK):
+
+| Herramienta | Para qué | Cómo se verifica |
+| --- | --- | --- |
+| `pdftotext` (poppler) | Extraer el texto del PDF a `material/tanda.md` | `pdftotext -v` |
+| `zathura` | Ver el PDF y decidir qué figura merece pantallazo | `which zathura` |
+| `ttyper` | Mecanografía | `which ttyper` |
+| Anki | Tarjetas (app externa) | — |
+| Toolbelt / PCS | En el PC de trabajo (Windows), no en esta máquina | manual |
+
+# ============================================================
+# SEGURIDAD EN EQUIPOS REALES — REGLA PERMANENTE, NO SE NEGOCIA
+# ============================================================
+
+Los equipos que estudia el usuario están EN PRODUCCIÓN en su empresa.
+Un error acá no es un ejercicio fallido: es una sala caída.
+
+- NUNCA se toca configuración de un equipo en producción sin
+  autorización explícita de quien corresponda.
+- En una sala EN USO no se toca nada. Punto.
+- Antes de cambiar cualquier configuración: anotar el valor anterior.
+  Sin eso no hay vuelta atrás.
+- Reset de fábrica, cambio de IP y actualización de firmware NO son
+  prácticas de aprendizaje: se hacen con autorización y con plan de
+  vuelta atrás.
+- Claude NUNCA propone una práctica que implique tocar un equipo en
+  producción sin recordar esta regla EN el archivo de arranque.
+- Ante la duda entre practicar y no romper nada: no se toca, y se
+  practica por escrito.
 
 ### Al proponer o registrar CUALQUIER práctica — REGLA PERMANENTE
 
@@ -373,7 +470,7 @@ y en este orden exacto:
 ```
 ▶ SIGUE: <qué es y por qué, en una línea>
   1. Ctrl+D  (solo si hay que cambiar de sesión, y se dice por qué)
-  2. /rename {{PREFIJO}}-sNN
+  2. /rename extron-sNN
   3. /<comando>
 ```
 
@@ -493,7 +590,7 @@ Hay dos numeraciones en este proyecto y NO avanzan juntas:
 
 - `Sesión #NN` (en GUIA.md) = una TANDA de material. Manda en la guía,
   en MECANOGRAFIA.md y en los nombres de los archivos de ttyper.
-- `{{PREFIJO}}-sNN` = el nombre de la SESIÓN DE CLAUDE (`/rename`,
+- `extron-sNN` = el nombre de la SESIÓN DE CLAUDE (`/rename`,
   `claude --resume`). Una sesión de Claude puede cubrir 2-3 tandas (si
   son de texto) o una sola (si son de imágenes).
 
@@ -571,9 +668,14 @@ Si algo de eso hace falta, se explica y se espera la decisión.
   con ese motivo, NO es un error del sistema ni algo para esquivar: es
   la regla de arriba aplicada. La corrección va al chat; el archivo lo
   cambia el usuario.
-- El usuario también PRUEBA su propio trabajo ({{CÓMO SE PRUEBA — lo
-  define el setup}}); los errores que pegue en el chat se explican
-  con calma (y traducidos): entender errores es aprendizaje.
+- El usuario también PRUEBA su propio trabajo. Acá no hay compilador,
+  así que "probar" es este orden fijo: (1) recorrer el checklist de
+  ToDo/ que corresponda; (2) contrastar contra el manual, buscando en
+  el PDF si lo que escribió coincide; (3) si aplica y ES SEGURO,
+  verificar en el equipo real; (4) explicárselo en voz alta sin mirar.
+  Eso es lo que reporta al correr `/entrega`. Los errores o mensajes
+  que pegue en el chat se explican con calma (y traducidos): entender
+  errores es aprendizaje.
 - EXCEPCIÓN explícita: Claude SÍ edita GUIA.md, EJERCICIOS.md,
   EJERCICIOS-ARCHIVO.md, RUTA.md, MECANOGRAFIA.md, ANKI.txt y ToDo/
   (memoria y plan; los mantiene Claude). CLAUDE.md solo en el setup o

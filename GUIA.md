@@ -1,4 +1,4 @@
-# GUÍA: {{TEMA}} — {{MATERIAL PRINCIPAL}}
+# GUÍA: equipos AV Extron — los manuales oficiales de Extron (PDF)
 
 No asume conocimiento previo — la mantiene Claude Code sesión a
 sesión. Cada sesión cubre una tanda del material (tamaño según formato:
@@ -10,7 +10,7 @@ Prácticas: ver EJERCICIOS.md.
 
 - Último punto estudiado: ninguno todavía — arrancamos en la Sesión #01
 - Última tanda: ninguna todavía (las tandas se numeran "Sesión #NN")
-- PRÓXIMA SESIÓN: `/rename {{PREFIJO}}-s01`
+- PRÓXIMA SESIÓN: `/rename extron-s01`
   (el nombre de la sesión de Claude sale SIEMPRE de esta línea, no se
   calcula: es un contador distinto al de las tandas, porque una sesión
   de Claude puede cubrir 2-3 tandas. Claude la actualiza al cerrar.)
@@ -19,11 +19,11 @@ Prácticas: ver EJERCICIOS.md.
   repasos viven en EJERCICIOS.md (fuente de verdad)
 - Último triage (`/pendientes`): nunca todavía
 - Último examen (`/examen`): nunca todavía
-- Entorno verificado: (lo completa Claude en el `/setup`)
+- Entorno verificado: 2026-08-27 — pdftotext 26.08.0, zathura, ttyper OK
 
 ## VOCABULARIO (solo si el material está en otro idioma; una fila por término nuevo)
 
-| Original                             | Español | En una frase |
+| Original (inglés)                    | Español | En una frase |
 | ------------------------------------ | ------- | ------------ |
 | (se llena a partir de la sesión #01) | —       | —            |
 

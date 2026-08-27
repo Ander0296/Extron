@@ -1,4 +1,4 @@
-# EJERCICIOS — {{TEMA}}
+# EJERCICIOS — equipos AV Extron
 
 Este archivo guarda SOLO lo VIVO (se lee entero al inicio de cada
 sesión, así que se mantiene corto a propósito):
