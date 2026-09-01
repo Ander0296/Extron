@@ -35,14 +35,20 @@ Arranque: ejercicios/repasos/... (desde cero, sin mirar el original)
 # PRÁCTICAS ABIERTAS
 # ============================================================
 
-(ninguna por ahora)
+PRÁCTICA #02 — Conectores del panel trasero del ShareLink 200 N — [~] en curso (1ª entrega 2026-09-01)
+Tipo: CONECTORES Y SUS LÍMITES + CASO DE FALLA
+Arranque: ejercicios/02-conectores-panel-trasero.md | Si te trabás: Sesión #02 de GUIA.md
+Checklists: ToDo/leer-el-panel-de-un-equipo.md · ToDo/diagnostico-pantalla-negra.md
+Corrección 1ª entrega: BIEN B1, B2, C1, C2, C3 y el plano del audio (mejor que su texto).
+MAL: confunde señal con corriente en la tabla A (marca la corriente como "digital"),
+D1 ordenado por distancia física y no por probabilidad×costo, y saltó el paso 2 de probar.
 
 # ============================================================
 # REPASOS PROGRAMADOS (r1 ~3 días, r2 ~2 semanas, r3 ~1 mes)
 # ============================================================
 
 REPASO — PRÁCTICA #01 (r1) — programado: 2026-09-05 — [ ] pendiente
-Arranque: ejercicios/repasos/ (desde cero, sin mirar el original)
+Arranque: ejercicios/repasos/r1-01-trazado-sharelink-200n.md (desde cero, sin mirar el original)
 Foco: escribir el camino de la señal en forma "origen --medio--> destino" y
 ordenar las hipótesis de diagnóstico dentro de cada rama.
 

@@ -8,14 +8,15 @@ Prácticas: ver EJERCICIOS.md.
 
 ## INICIO RÁPIDO
 
-- Último punto estudiado: ShareLink 200 N User Guide, pág. 7 del PDF
-  (Introduction / About + Figure 1). Siguiente: "Features", pág. 8
-- Última tanda: Sesión #01 (2026-09-01)
-- PRÓXIMA SESIÓN: `/rename extron-s03`
+- Último punto estudiado: ShareLink 200 N User Guide, pág. 10 del PDF
+  (Installation: paneles trasero, frontal e inferior). Siguiente:
+  "Setting up the Standby Screen", pág. 11
+- Última tanda: Sesión #02 (2026-09-01)
+- PRÓXIMA SESIÓN: `/rename extron-s04`
   (el nombre de la sesión de Claude sale SIEMPRE de esta línea, no se
   calcula: es un contador distinto al de las tandas, porque una sesión
   de Claude puede cubrir 2-3 tandas. Claude la actualiza al cerrar.)
-- Prácticas pendientes: ninguna abierta — repaso r1 de la #01 el 2026-09-05
+- Prácticas pendientes: #02 [~] corregida 1ª entrega, esperando la 2ª — repaso r1 de la #01 el 2026-09-05
 - Último triage (`/pendientes`): nunca todavía
 - Último examen (`/examen`): nunca todavía
 - Entorno verificado: 2026-08-27 — pdftotext 26.08.0, zathura, ttyper OK
@@ -38,6 +39,22 @@ Prácticas: ver EJERCICIOS.md.
 | Specifications | especificaciones | Datos técnicos duros: resoluciones, consumo, medidas. |
 | SIS (Simple Instruction Set) | conjunto simple de instrucciones | El "idioma" de comandos de texto con que se le dan órdenes a un equipo Extron. |
 | EDID Minder | (nombre propio Extron) | Tecnología Extron que memoriza el EDID de la pantalla para que la fuente nunca se quede sin él. |
+| Features | características | Lista de "qué sabe hacer" el equipo. Es publicidad ordenada: se lee para saber qué buscar después. |
+| Outputs | salidas | Los conectores por donde SALE la señal hacia la pantalla o el amplificador. |
+| 15-pin HD connector | conector HD de 15 pines | Es el VGA de toda la vida. Extron casi nunca escribe "VGA" en las especificaciones: escribe esto. |
+| Power over Ethernet (PoE) | alimentación a través de Ethernet | Un solo cable de red lleva datos Y corriente: el equipo no necesita enchufe propio. |
+| LAN (Local Area Network) | red de área local | La red del edificio: los cables y switches que conectan todo dentro del mismo sitio. |
+| RJ-45 | (conector RJ-45) | El conector cuadrado del cable de red, con la lengüeta de plástico. El único conector de ENTRADA del ShareLink. |
+| Female connector | conector hembra | El agujero, el que está en el equipo. El macho es la punta del cable que entra ahí. |
+| Full screen / four-window display | pantalla completa / cuatro ventanas | Una fuente ocupando todo el televisor, o cuatro fuentes a la vez en cuadrantes. |
+| USB type A | USB tipo A | El USB rectangular clásico. Acá sirve para pendrive, teclado o ratón. |
+| Rear / Front / Bottom Panel | panel trasero / frontal / inferior | Las tres caras del equipo que el manual documenta con un dibujo y letras A, B, C... |
+| Power LED | LED de encendido | La luz del frente. Verde = el equipo tiene corriente. Primer punto de diagnóstico, siempre. |
+| Reset button | botón de reinicio | Botón hundido en el panel inferior: devuelve el equipo a fábrica. Se pulsa con un clip. |
+| Air handling spaces / wall cavities | espacios de tratamiento de aire / cavidades de pared | Falso techo por donde pasa el aire acondicionado, o el hueco de un tabique. La fuente NO va ahí. |
+| LPS / Class 2 power unit | fuente de potencia limitada / clase 2 | Categoría de fuente de alimentación que no puede entregar más corriente de la segura. |
+| SNMP | (protocolo simple de gestión de red) | Sistema que permite vigilar desde un servidor si el equipo está vivo, sin ir a la sala. |
+| Standby Screen | pantalla de espera | Lo que muestra el equipo cuando nadie está presentando: instrucciones para conectarse. |
 
 ============================================================
 
@@ -71,6 +88,35 @@ SESIÓN #01 — 2026-09-01 — ShareLink 200 N: preliminares + Introduction
   Wi-Fi de invitados aislado es el caso que rompe esa suposición.
 - PRÁCTICAS CREADAS: #01 (trazado de señal del ShareLink 200 N).
 - PRÓXIMO PASO: pág. 8 del PDF, sección "Features".
+
+SESIÓN #02 — 2026-09-01 — ShareLink 200 N: Features + Installation (paneles)
+(págs. 8, 9 y 10 del PDF — ~21% del manual)
+- El panel trasero ES la cadena de señal hecha física: UNA entrada
+  (RJ-45) y varias salidas (HDMI, VGA/15 pines HD, audio 3,5 mm, USB).
+  Todo lo que entra al equipo entra por el cable de red.
+- PoE: el mismo cable RJ-45 lleva datos Y corriente. Si el switch da
+  PoE, la fuente sobra. Consecuencia de diagnóstico: un equipo alimentado
+  por PoE se apaga si cae el switch, aunque el enchufe de la sala funcione.
+- Dos salidas de video, dos mundos: HDMI (digital, lleva video + audio)
+  y VGA/15 pines HD (analógico, video SOLO). Por eso existe el jack de
+  audio de 3,5 mm: es la pareja obligatoria del VGA.
+- 4-en-1 y 1-a-4 son cosas distintas: cuatro ventanas = 4 fuentes en UNA
+  pantalla; "hasta cuatro unidades" = 1 PC hacia 4 ShareLink y 4 pantallas.
+- Panel frontal: 2 USB tipo A (teclado/ratón, anotación) + Power LED
+  verde. Panel inferior: botón de reinicio (clip, sin corriente, enchufar
+  y mantener 10 s).
+- Nota del profe: la caja ATTENTION de la pág. 10 está en inglés Y
+  francés — es el MISMO aviso repetido, no dos avisos distintos.
+- Nota del profe: la pág. 8 era texto puro y vino como pantallazo.
+  Ese tipo de página va con `pdftotext`; el pantallazo se reserva para
+  los dibujos de panel (págs. 9 y 10, donde sí estaba justificado).
+- Verificación: ordenó bien el árbol de PoE (LED → cable → switch) e
+  ignoró solo la pista falsa del enchufe de la sala. Corregido: el LED
+  parte el diagnóstico en DOS ramas que no se cruzan (apagado = solo
+  alimentación); "switch encendido" no es "el puerto entrega PoE"; y
+  el cable de audio va de SALIDA del equipo a ENTRADA del amplificador.
+- PRÁCTICAS CREADAS: #02 (conectores del panel trasero + caso de falla).
+- PRÓXIMO PASO: pág. 11, "Setting up the Standby Screen".
 
 ============================================================
 (ACÁ VAN LAS SESIONES — Claude agrega la SESIÓN #01 en la primera

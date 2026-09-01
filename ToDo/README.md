@@ -46,3 +46,4 @@ estás dejando que otro encuentre tus errores por vos.
 - (vacío — Claude agrega una línea acá cada vez que crea un checklist)
 - [leer-manual-extron.md](leer-manual-extron.md) — cómo recorrer un manual Extron en inglés sin perderse: estructura fija, carteles y trampas.
 - [diagnostico-pantalla-negra.md](diagnostico-pantalla-negra.md) — qué verificar, y en qué orden, cuando una pantalla está en negro o nadie puede presentar.
+- [leer-el-panel-de-un-equipo.md](leer-el-panel-de-un-equipo.md) — qué mirar, y en qué orden, frente al panel de un equipo Extron que no conozco: entradas vs salidas, tipo de señal y alimentación.

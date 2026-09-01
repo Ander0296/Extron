@@ -22,3 +22,9 @@ La pasarela recibe la imagen por la red y la manda al televisor por un cable HDM
 
 s01 — versión de red:
 El equipo no crea Wi-Fi propio: se integra a la red que ya existe en el edificio.
+
+s02 — PoE:
+El mismo cable de red lleva los datos y la corriente, y el equipo no necesita enchufe propio.
+
+s02 — HDMI contra VGA:
+El HDMI es digital y lleva video y audio; el VGA es analogico y necesita un jack aparte.
