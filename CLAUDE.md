@@ -627,11 +627,16 @@ ignora. Es lo que mantiene sincronizados los dos PCs del usuario.
 **Al CERRAR** (`/cambio` y `/cierre`, y cada vez que se completa algo
 grande):
 1. Correr el chequeo de seguridad (abajo). Si falla, PARAR.
-2. Mostrar en el chat, corto, qué archivos cambiaron y con qué mensaje
-   de commit se van a guardar.
-3. **PREGUNTAR y esperar el OK del usuario.** Siempre.
-4. Recién ahí: `git add` + `git commit` + `git push`.
-5. Confirmar en una línea que subió, o pegar el error tal cual si falló.
+2. `git add` + `git commit` + `git push`.
+3. INFORMAR en el chat, corto: qué archivos subieron y con qué mensaje
+   de commit. O pegar el error tal cual si falló.
+
+**En `/cierre` NO se pide OK**: Claude commitea y sube directo, y
+después informa. El único freno sigue siendo el chequeo de seguridad:
+si aparece `material/` en el diff, no se commitea nada.
+
+En `/cambio` y en los commits sueltos del medio del día, el flujo es el
+mismo: se sube y se informa, sin pedir OK.
 
 **Chequeo de seguridad — ANTES de todo commit, sin excepción:**
 

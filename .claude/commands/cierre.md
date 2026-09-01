@@ -19,10 +19,10 @@ Cerramos el día:
    líneas, comprimí las viejas.
 4. Guardá en Engram (project = nombre de esta carpeta) el resumen del
    día y en qué punto del material quedamos.
-5. Corré el chequeo de seguridad de git (REGLA DE GIT de CLAUDE.md),
-   mostrame qué archivos cambiaron y con qué mensaje de commit, y
-   pedime el OK. Con el OK: `git add` + `git commit` + `git push`, y
-   confirmame en una línea que subió (o pegame el error tal cual).
+5. Corré el chequeo de seguridad de git (REGLA DE GIT de CLAUDE.md) y,
+   si pasa, subí directo: `git add` + `git commit` + `git push`. NO me
+   pidas OK. Después informame en una línea qué archivos subieron y con
+   qué mensaje de commit (o pegame el error tal cual si falló).
 6. Dame el resumen del día en 5 líneas.
 
 Cerrá con el bloque `▶ SIGUE` para la próxima vez que abra Claude. Si se
