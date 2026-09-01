@@ -35,16 +35,16 @@ Arranque: ejercicios/repasos/... (desde cero, sin mirar el original)
 # PRÁCTICAS ABIERTAS
 # ============================================================
 
-PRÁCTICA #01 — trazado de señal del ShareLink 200 N — [ ] pendiente
-Tipo: TRAZADO DE SEÑAL (+ diagnóstico y traducción técnica)
-Arranque: ejercicios/01-trazado-sharelink-200n.md | Si te trabás: Sesión #01 de GUIA.md
-Checklist: ToDo/leer-manual-extron.md
+(ninguna por ahora)
 
 # ============================================================
 # REPASOS PROGRAMADOS (r1 ~3 días, r2 ~2 semanas, r3 ~1 mes)
 # ============================================================
 
-(vacío por ahora)
+REPASO — PRÁCTICA #01 (r1) — programado: 2026-09-05 — [ ] pendiente
+Arranque: ejercicios/repasos/ (desde cero, sin mirar el original)
+Foco: escribir el camino de la señal en forma "origen --medio--> destino" y
+ordenar las hipótesis de diagnóstico dentro de cada rama.
 
 # ============================================================
 # CONCEPTOS DOMINADOS (entran al graduarse una práctica con r3 bien)

@@ -52,6 +52,16 @@ Cuando el usuario corra `/setup` con sus datos, Claude debe:
 - Idioma del material: INGLÉS, y el usuario NO lo domina. Por lo tanto: TODA
   frase o término citado del material va acompañado AL LADO de su
   traducción al español entre paréntesis. Sin excepciones.
+  ALCANCE de esa regla — no es solo el chat: aplica IGUAL a los archivos
+  de arranque de ejercicios/, a los repasos, a los exámenes, a los
+  checklists de ToDo/ y a las tarjetas de ANKI.txt. Si Claude escribe
+  una cita en inglés en cualquier archivo del proyecto y no pone la
+  traducción al lado, está pidiéndole al usuario que adivine, y adivinar
+  no enseña nada.
+  PROHIBIDO PEDIR UNA TRADUCCIÓN A CIEGAS: nunca se le pide al usuario
+  que traduzca un texto en inglés que no viene ya traducido. Lo que se
+  le pide es lo que SÍ entrena: explicar con sus palabras qué implica
+  técnicamente esa frase ya traducida (ver el tipo TRADUCCIÓN TÉCNICA).
 - Explicar paso a paso, con analogías de la vida real cuando ayuden.
 - Todo en español. Términos técnicos clave también en el idioma
   original entre paréntesis si le sirven al objetivo del usuario.
@@ -185,7 +195,7 @@ en `ejercicios/`:
 | TRAZADO DE SEÑAL | Dado un escenario, escribe el camino completo de la señal, equipo por equipo y conector por conector |
 | CASO DE FALLA | Dado un síntoma ("se ve pero no se oye"), escribe el árbol de hipótesis ORDENADO y qué verifica primero |
 | FICHA DE EQUIPO | Toma un equipo REAL de su empresa y arma su ficha estándar en `fichas/` |
-| TRADUCCIÓN TÉCNICA | Traduce y explica con sus palabras un fragmento del manual en inglés |
+| TRADUCCIÓN TÉCNICA | Lee un fragmento del manual que Claude le da SIEMPRE en inglés Y traducido al lado, y explica con sus palabras qué implica técnicamente y qué consecuencia tiene en una sala real |
 | EQUIPO REAL | Cuando pueda y sea seguro: hace algo en un equipo y registra qué hizo, qué esperaba y qué pasó |
 
 **CÓMO SE PRUEBA una práctica acá**: ver la regla en "Reglas de

@@ -11,11 +11,11 @@ Prácticas: ver EJERCICIOS.md.
 - Último punto estudiado: ShareLink 200 N User Guide, pág. 7 del PDF
   (Introduction / About + Figure 1). Siguiente: "Features", pág. 8
 - Última tanda: Sesión #01 (2026-09-01)
-- PRÓXIMA SESIÓN: `/rename extron-s02`
+- PRÓXIMA SESIÓN: `/rename extron-s03`
   (el nombre de la sesión de Claude sale SIEMPRE de esta línea, no se
   calcula: es un contador distinto al de las tandas, porque una sesión
   de Claude puede cubrir 2-3 tandas. Claude la actualiza al cerrar.)
-- Prácticas pendientes: #01 trazado de señal del ShareLink 200 N
+- Prácticas pendientes: ninguna abierta — repaso r1 de la #01 el 2026-09-05
 - Último triage (`/pendientes`): nunca todavía
 - Último examen (`/examen`): nunca todavía
 - Entorno verificado: 2026-08-27 — pdftotext 26.08.0, zathura, ttyper OK
