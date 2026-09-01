@@ -44,3 +44,4 @@ estás dejando que otro encuentre tus errores por vos.
 ## Índice
 
 - (vacío — Claude agrega una línea acá cada vez que crea un checklist)
+- [leer-manual-extron.md](leer-manual-extron.md) — cómo recorrer un manual Extron en inglés sin perderse: estructura fija, carteles y trampas.

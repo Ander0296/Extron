@@ -17,4 +17,8 @@ cambia, se agrega una frase nueva.
 # FRASES POR SESIÓN
 # ============================================================
 
-(vacío — se llena a partir de la Sesión #01)
+s01 — ShareLink 200 N, qué es:
+La pasarela recibe la imagen por la red y la manda al televisor por un cable HDMI.
+
+s01 — versión de red:
+El equipo no crea Wi-Fi propio: se integra a la red que ya existe en el edificio.

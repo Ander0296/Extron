@@ -2,3 +2,10 @@
 #html:false
 #deck:Extron
 #tags:extron
+
+¿Cuál es la estructura fija de secciones de un manual de usuario Extron?	Introduction, Installation, Operation, Reference y Specifications (más los preliminares de seguridad y convenciones al principio).
+En un manual Extron, ¿qué diferencia hay entre WARNING y ATTENTION?	WARNING avisa de un peligro para la PERSONA (descarga eléctrica). ATTENTION avisa de algo que puede dañar o destruir el EQUIPO.
+¿Qué hace un Extron ShareLink 200 N?	Es una pasarela de colaboración: recibe la imagen de PC, tablet o móvil a través de la red y la envía por HDMI a una pantalla, sin cable de video hacia el dispositivo.
+¿Qué significa la 'N' de Network Version en el ShareLink 200 N?	Que el equipo NO genera su propio Wi-Fi: hay que integrarlo a una red existente que ya tenga cobertura inalámbrica. Sin esa red, no se puede presentar.
+¿Cuál es la cadena de señal completa de una presentación inalámbrica con un ShareLink 200 N?	Dispositivo (portátil/móvil) -> Wi-Fi -> punto de acceso inalámbrico de la sala -> red -> Ethernet -> ShareLink 200 N -> HDMI -> pantalla.
+¿Qué significa que un equipo AV sea FCC Class A?	Que está homologado para entorno comercial, no doméstico: en una vivienda puede provocar interferencias de radio y corregirlas corre por cuenta del usuario.
