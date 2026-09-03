@@ -8,11 +8,12 @@ Prácticas: ver EJERCICIOS.md.
 
 ## INICIO RÁPIDO
 
-- Último punto estudiado: ShareLink 200 N User Guide, pág. 13 del PDF
-  (Standby Screen, Whiteboard, USB Player). Siguiente: pág. 14,
-  Installation
-- Última tanda: Sesión #03 (2026-09-03)
-- PRÓXIMA SESIÓN: `/rename extron-s05`
+- Último punto estudiado: ShareLink 200 N User Guide, capítulo
+  "Operation Using a Computer" (conectar por software, cuadrantes,
+  Share Media/subred, menú Advanced Settings). Siguiente: mismo
+  capítulo, "Sharing on Multiple Screens".
+- Última tanda: Sesión #05 (2026-09-03)
+- PRÓXIMA SESIÓN: `/rename extron-s07`
   (el nombre de la sesión de Claude sale SIEMPRE de esta línea, no se
   calcula: es un contador distinto al de las tandas, porque una sesión
   de Claude puede cubrir 2-3 tandas. Claude la actualiza al cerrar.)
@@ -60,6 +61,17 @@ Prácticas: ver EJERCICIOS.md.
 | One-stroke mode | modo un solo trazo | Cada trazo nuevo borra el anterior (distinto al modo Default, que no borra). |
 | USB Player | reproductor USB | Función que muestra fotos, videos, audio y documentos desde un USB en el panel trasero. |
 | FAT32 | (formato de sistema de archivos) | El USB tiene que estar formateado así, con una sola partición, para que el ShareLink lo lea. |
+| Landing page | página de aterrizaje / inicio | La página web del equipo que aparece al escribir su IP en el navegador; desde ahí se lanza el software. |
+| Lite software / Pro software | software Lite / software Pro | Lite corre desde el navegador sin instalar nada. Pro se descarga e instala, con funciones extra (multi-pantalla, WebShare). |
+| Login code | código de acceso | El código que pide el software para conectarse al equipo; se muestra en la standby screen, junto con la IP. |
+| Room File | archivo de sala | Guarda un receptor ya elegido para que el software se conecte solo, sin buscarlo cada vez. |
+| Control screen | pantalla de control | La ventana del software una vez conectado: pestañas Share my Screen, Share Media y el menú. |
+| Quadrant | cuadrante | Cada uno de los 4 cuartos en que se puede repartir la pantalla para 4 PCs a la vez. |
+| Subnet | subred | El "tramo de red local" de un dispositivo. Dos equipos en subredes distintas no se ven directo, aunque ambos tengan internet. |
+| Image Quality | calidad de imagen | Normal o Best: a más calidad, más ancho de banda de red consume el streaming. |
+| Aspect Ratio | relación de aspecto | Proporción ancho/alto de la imagen (ej: 4:3, 16:9). |
+| Source Aspect Ratio | relación de aspecto de origen | Mantiene la proporción del dispositivo origen; si no coincide con la pantalla, agrega barras negras. |
+| Device Admin | administración del equipo | Acceso a la configuración interna (IP, contraseñas) desde el menú del software. |
 
 ============================================================
 
@@ -141,6 +153,50 @@ SESIÓN #03 — 2026-09-03 — ShareLink 200 N: Standby Screen, Whiteboard, USB 
 - PRÁCTICAS CREADAS: ninguna (tanda liviana, no se abre frente nuevo
   con la #02 todavía en curso).
 - PRÓXIMO PASO: pág. 14 del PDF, Installation (después de USB Player).
+
+SESIÓN #04 — 2026-09-03 — ShareLink 200 N: Operation Using a Computer
+(capítulo "Operation Using a Computer", 3 pantallazos — footer pág. 8-10 de ESE capítulo)
+- Dos formas de conectar la PC al ShareLink: inalámbrica (WAP externo)
+  o cableada (RJ-45 a switch/hub/router). Misma cadena de siempre, con
+  un tramo de red (datos) antes del tramo HDMI (video).
+- Software Lite (corre desde el navegador, sin instalar) vs Pro
+  (se descarga e instala, funciones extra). La standby screen vuelve a
+  ser la fuente de los datos de conexión: ahí están la IP Y el código
+  de acceso (login code) que pide el software.
+- Descarga/instalación del software Pro: desde las páginas del equipo
+  o desde extron.com — mecánico, contexto.
+- Ejercicios de la tanda: ninguno.
+- Nota del profe: el pie de página de este capítulo dice "8, 9, 10",
+  IGUAL que el de la Sesión #02 — el manual reinicia la numeración por
+  CAPÍTULO, no es continua. De acá en adelante registro el punto por
+  capítulo + sección (tomado de las referencias del propio texto), no
+  por número de página suelto.
+- Dudas: identificó los dos tramos (WAP inalámbrico + cable al
+  ShareLink) y por qué la standby screen es la primera parada.
+- PRÁCTICAS CREADAS: ninguna.
+- PRÓXIMO PASO: mismo capítulo, sección "Presenting the Computer
+  Screen" (el texto la cita como página 12 de este capítulo).
+
+SESIÓN #05 — 2026-09-03 — ShareLink 200 N: Presenting/Software Menu
+(capítulo "Operation Using a Computer", págs. 11-14 de ESE capítulo)
+- Conexión por software: diálogo "Choose a Receiver", login con Code,
+  y Room File para saltarse la búsqueda. "Other Receivers" solo lista
+  SSIDs que empiezan con "ShareLink" salvo que se pida "all networks".
+- Control screen con 3 partes: Share my Screen (cuadrantes, hasta 4 PCs
+  a la vez, pero el audio SOLO sale del cuadrante superior izquierdo).
+- Share Media (streamear un archivo, no la pantalla en vivo) exige que
+  origen y receptor estén en la MISMA subred — primera aparición de
+  este concepto, explicado con la analogía calle/casa.
+- Menú del software → Advanced Settings: Image Quality (calidad vs.
+  ancho de banda) y Aspect Ratio (Full Screen estira, Source Aspect
+  Ratio mantiene proporción y agrega barras negras) — conecta directo
+  con el Pareto #4 del proyecto.
+- Ejercicios de la tanda: ninguno.
+- Dudas: pendiente — verificación de comprensión en el chat de esta
+  tanda, se completa este bullet en el próximo turno.
+- PRÁCTICAS CREADAS: ninguna.
+- PRÓXIMO PASO: mismo capítulo, sección "Sharing on Multiple Screens"
+  (a continuación de la pág. 14).
 
 ============================================================
 (ACÁ VAN LAS SESIONES — Claude agrega la SESIÓN #01 en la primera

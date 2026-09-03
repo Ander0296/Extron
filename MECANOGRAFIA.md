@@ -34,3 +34,12 @@ El USB debe estar formateado en FAT32 y con una sola particion para que el equip
 
 s03 — whiteboard contra USB player:
 La pizarra dibuja sobre la pantalla sin nada conectado, el USB player necesita el USB enchufado.
+
+s04 — donde estan los datos de conexion:
+La IP y el codigo de acceso del software se muestran en la pantalla standby.
+
+s05 — subred en Share Media:
+El archivo multimedia no se reproduce si origen y receptor no comparten la misma subred.
+
+s05 — aspect ratio:
+Source Aspect Ratio mantiene la proporcion original y agrega barras negras si no coincide.
