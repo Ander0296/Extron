@@ -43,3 +43,9 @@ El archivo multimedia no se reproduce si origen y receptor no comparten la misma
 
 s05 — aspect ratio:
 Source Aspect Ratio mantiene la proporcion original y agrega barras negras si no coincide.
+
+s06 — cuadrante-audio en Multiple Screens:
+El checkbox Screen manda video a varios receptores, el radio button Audio a uno solo.
+
+s06 — Room File y login code estatico:
+El Room File exige login code estatico, si es aleatorio el archivo queda desactualizado.

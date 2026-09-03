@@ -8,12 +8,11 @@ Prácticas: ver EJERCICIOS.md.
 
 ## INICIO RÁPIDO
 
-- Último punto estudiado: ShareLink 200 N User Guide, capítulo
-  "Operation Using a Computer" (conectar por software, cuadrantes,
-  Share Media/subred, menú Advanced Settings). Siguiente: mismo
-  capítulo, "Sharing on Multiple Screens".
-- Última tanda: Sesión #05 (2026-09-03)
-- PRÓXIMA SESIÓN: `/rename extron-s07`
+- Último punto estudiado: ShareLink 200 N User Guide — CERRADO el
+  capítulo "Operation Using a Computer" completo. Siguiente: el
+  capítulo que sigue en el manual (a confirmar con la próxima tanda).
+- Última tanda: Sesión #06 (2026-09-03)
+- PRÓXIMA SESIÓN: `/rename extron-s08`
   (el nombre de la sesión de Claude sale SIEMPRE de esta línea, no se
   calcula: es un contador distinto al de las tandas, porque una sesión
   de Claude puede cubrir 2-3 tandas. Claude la actualiza al cerrar.)
@@ -72,6 +71,7 @@ Prácticas: ver EJERCICIOS.md.
 | Aspect Ratio | relación de aspecto | Proporción ancho/alto de la imagen (ej: 4:3, 16:9). |
 | Source Aspect Ratio | relación de aspecto de origen | Mantiene la proporción del dispositivo origen; si no coincide con la pantalla, agrega barras negras. |
 | Device Admin | administración del equipo | Acceso a la configuración interna (IP, contraseñas) desde el menú del software. |
+| Static / Random (login code) | estático / aleatorio | Static = código fijo, no cambia. Random = cambia solo. El Room File exige static, si no queda viejo. |
 
 ============================================================
 
@@ -199,6 +199,28 @@ SESIÓN #05 — 2026-09-03 — ShareLink 200 N: Presenting/Software Menu
 - PRÁCTICAS CREADAS: ninguna.
 - PRÓXIMO PASO: mismo capítulo, sección "Sharing on Multiple Screens"
   (a continuación de la pág. 14).
+
+SESIÓN #06 — 2026-09-03 — ShareLink 200 N: cierre de Presenting/Software Menu
+(capítulo "Operation Using a Computer", págs. 15-16 de ESE capítulo — CIERRA el capítulo)
+- Fin del menú del software: Disconnect, Show Receiver Info (overlay
+  30 seg con IP/SSID/login code), About, Exit.
+- Sharing on Multiple Screens: 1 PC transmite a hasta 4 receptores.
+  Checkbox "Screen" (video, multi-select) vs. radio button "Audio"
+  (single-select) — misma lógica del cuadrante-audio de la Sesión #05
+  pero aplicada a receptores completos.
+- USB Thumb-drive App: corre el software desde un pendrive sin
+  instalarlo en la PC (~25 MB, carpeta "ShareLink 200" + .exe).
+- Room File en detalle: archivo .txt con XML (IP + LoginCode),
+  renombrado a .link. Exige login code STATIC (no random) o el
+  archivo queda desactualizado — el "cómo" fijarlo va en Device Setup,
+  sesión futura.
+- Ejercicios de la tanda: ninguno.
+- Dudas: ambas bien. Corregido matiz en la 2ª — el audio se limita por
+  ser RADIO BUTTON (control exclusivo), no por el checkbox (que es de
+  video y sí admite varios).
+- PRÁCTICAS CREADAS: ninguna.
+- PRÓXIMO PASO: capítulo siguiente del manual (a definir con la
+  próxima tanda de material).
 
 ============================================================
 (ACÁ VAN LAS SESIONES — Claude agrega la SESIÓN #01 en la primera
