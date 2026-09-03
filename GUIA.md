@@ -192,8 +192,10 @@ SESIÓN #05 — 2026-09-03 — ShareLink 200 N: Presenting/Software Menu
   Ratio mantiene proporción y agrega barras negras) — conecta directo
   con el Pareto #4 del proyecto.
 - Ejercicios de la tanda: ninguno.
-- Dudas: pendiente — verificación de comprensión en el chat de esta
-  tanda, se completa este bullet en el próximo turno.
+- Dudas: cuadrante-audio bien (superior izquierdo). Subred: identificó
+  bien que subredes distintas rompen Share Media, corregido el matiz
+  de que NO es un tema de "formato del archivo" sino de visibilidad
+  directa en la red.
 - PRÁCTICAS CREADAS: ninguna.
 - PRÓXIMO PASO: mismo capítulo, sección "Sharing on Multiple Screens"
   (a continuación de la pág. 14).
