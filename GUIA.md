@@ -8,11 +8,11 @@ Prácticas: ver EJERCICIOS.md.
 
 ## INICIO RÁPIDO
 
-- Último punto estudiado: ShareLink 200 N User Guide, pág. 10 del PDF
-  (Installation: paneles trasero, frontal e inferior). Siguiente:
-  "Setting up the Standby Screen", pág. 11
-- Última tanda: Sesión #02 (2026-09-01)
-- PRÓXIMA SESIÓN: `/rename extron-s04`
+- Último punto estudiado: ShareLink 200 N User Guide, pág. 13 del PDF
+  (Standby Screen, Whiteboard, USB Player). Siguiente: pág. 14,
+  Installation
+- Última tanda: Sesión #03 (2026-09-03)
+- PRÓXIMA SESIÓN: `/rename extron-s05`
   (el nombre de la sesión de Claude sale SIEMPRE de esta línea, no se
   calcula: es un contador distinto al de las tandas, porque una sesión
   de Claude puede cubrir 2-3 tandas. Claude la actualiza al cerrar.)
@@ -55,6 +55,11 @@ Prácticas: ver EJERCICIOS.md.
 | LPS / Class 2 power unit | fuente de potencia limitada / clase 2 | Categoría de fuente de alimentación que no puede entregar más corriente de la segura. |
 | SNMP | (protocolo simple de gestión de red) | Sistema que permite vigilar desde un servidor si el equipo está vivo, sin ir a la sala. |
 | Standby Screen | pantalla de espera | Lo que muestra el equipo cuando nadie está presentando: instrucciones para conectarse. |
+| Receiver hostname | nombre de host del receptor | Nombre alternativo a la IP para identificar el equipo al conectarse. |
+| Whiteboard | pizarra | Dibujar sobre la pantalla con mouse o touchscreen, sin nada conectado. |
+| One-stroke mode | modo un solo trazo | Cada trazo nuevo borra el anterior (distinto al modo Default, que no borra). |
+| USB Player | reproductor USB | Función que muestra fotos, videos, audio y documentos desde un USB en el panel trasero. |
+| FAT32 | (formato de sistema de archivos) | El USB tiene que estar formateado así, con una sola partición, para que el ShareLink lo lea. |
 
 ============================================================
 
@@ -117,6 +122,25 @@ SESIÓN #02 — 2026-09-01 — ShareLink 200 N: Features + Installation (paneles
   el cable de audio va de SALIDA del equipo a ENTRADA del amplificador.
 - PRÁCTICAS CREADAS: #02 (conectores del panel trasero + caso de falla).
 - PRÓXIMO PASO: pág. 11, "Setting up the Standby Screen".
+
+SESIÓN #03 — 2026-09-03 — ShareLink 200 N: Standby Screen, Whiteboard, USB Player
+(págs. 11, 12 y 13 del PDF — ~27% del manual)
+- Standby Screen (pantalla de espera): lo que se ve cuando nadie
+  presenta. Trae IP address, receiver hostname y code — los TRES datos
+  para conectarse desde una laptop (Pareto #5, acceso por IP).
+- Whiteboard (pizarra): dibuja SOBRE la pantalla, sin nada conectado.
+  Modo Default (no borra trazos previos) vs One-stroke (cada trazo
+  nuevo borra el anterior). Es función de presentación, no de diagnóstico.
+- USB Player: requiere un USB físico en el panel trasero, formateado
+  FAT32 y con UNA sola partición. Discos externos necesitan alimentación
+  propia (el puerto no los alimenta). Soporta foto, video, audio, Office.
+- Ejercicios de la tanda: ninguno (es descripción de funciones de UI).
+- Dudas: identificó bien el requisito FAT32 y la diferencia funcional
+  whiteboard/USB player; afinado que el whiteboard no depende de nada
+  conectado y el USB player sí.
+- PRÁCTICAS CREADAS: ninguna (tanda liviana, no se abre frente nuevo
+  con la #02 todavía en curso).
+- PRÓXIMO PASO: pág. 14 del PDF, Installation (después de USB Player).
 
 ============================================================
 (ACÁ VAN LAS SESIONES — Claude agrega la SESIÓN #01 en la primera

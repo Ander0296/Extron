@@ -28,3 +28,9 @@ El mismo cable de red lleva los datos y la corriente, y el equipo no necesita en
 
 s02 — HDMI contra VGA:
 El HDMI es digital y lleva video y audio; el VGA es analogico y necesita un jack aparte.
+
+s03 — USB Player:
+El USB debe estar formateado en FAT32 y con una sola particion para que el equipo lo lea.
+
+s03 — whiteboard contra USB player:
+La pizarra dibuja sobre la pantalla sin nada conectado, el USB player necesita el USB enchufado.
