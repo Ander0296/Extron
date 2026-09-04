@@ -35,12 +35,12 @@ acordás, escribí "no me acuerdo" — eso es información útil, inventar no.
 
 Debajo de la tabla, contestá en una línea cada una:
 
-A. Audio Out, salida, audio, analogico, si 
-B. LAN, entrada, lleva datos, Digital, si
-C. Conector HD 15 pines, salida, datos, analógico, no
-D. HDMI, salida, datos, digital, si
-E. USB, entrada, control, no sé, no 
-F. Potencia, entrada, corriente, digital, no
+A. Audio Out, salida, audio, analogico, si lleva audio
+B. LAN, entrada, lleva datos, Digital, si lleva audio
+C. Conector HD 15 pines, salida, datos, analógico, no lleva audio
+D. HDMI, salida, datos, digital, si lleva audio
+E. USB, entrada, control, no sé, no lleva audio
+F. Potencia, entrada, corriente, no lleva audio
 
 A1. ¿Cuántas ENTRADAS de señal tiene este equipo, y cuál es?
 Tiene 3 entradas de señal, Puerto LAN PoE, USB, y Potencia
@@ -57,19 +57,23 @@ B1. Escribí la diferencia entre la salida HDMI y la salida VGA
     (el manual la llama "15-pin HD connector" = conector HD de 15
     pines) en términos de: qué tipo de señal es cada una y qué
     transporta cada una.
-La diferencia entre HDMI y VGA es que en el HDMI estoy transmitiendo datos de forma digital es decir unos y ceros
-Adicional se transmite imagen y se transmite audio, por el caso contrario el VGA es una señal analógica y no 
-transmite audio, solo video.
+
+R/ La diferencia entre la salida de HDMI y la salida VGA es HDMI son datos analogicos,
+transporta imagen y tambien transporta audio, la salida VGA es analogica, transporta solo imagen
+al ser analogico cualquier persona podría mandar datos a ese sharelink y puede interrumpir.
 
 B2. Una sala tiene el ShareLink conectado a un proyector viejo por la
     salida VGA. El presentador comparte un video de YouTube. Se ve
     perfecto y no se oye nada. ¿Por qué? ¿Qué conector del panel
     trasero resuelve esto y a dónde tiene que ir el cable?
-Esto pasa porque el VGA no transmite audio, debe haber un cable que va a la salida de audio Jack 3.5 del sharelink
+
+R/ No se oye nada porque la salida es VGA que no transporta audio, adicional no se tiene el cable adicional que va en la salida de audio del sharelink
+ese es el conector que debe ir adicional, en el out audio, y debe ir a un parlante o un dispositivo que nos de el audio
 
 B3. Escribí el camino completo del AUDIO en esa sala, una vez
     resuelto, con el formato "origen --medio--> destino".
-El camino completo es el siguiente, 
+
+R/El camino completo es el siguiente, 
 Sale del portatil al access point via WiFi, del acces point se transporta al network via cable de red
 de la network se transporta al sharelink 200 N por via cable de red.
 Para transmitir el audio se debe conectar un cable con Jack 3.5 a la salida del sharelink

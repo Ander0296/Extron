@@ -8,17 +8,16 @@ Prácticas: ver EJERCICIOS.md.
 
 ## INICIO RÁPIDO
 
-- Último punto estudiado: ShareLink 200 N User Guide — CERRADO el
-  capítulo "Operation Using a Computer" completo. Siguiente: el
-  capítulo que sigue en el manual (a confirmar con la próxima tanda).
-- Última tanda: Sesión #06 (2026-09-03)
-- PRÓXIMA SESIÓN: `/rename extron-s08`
-  (el nombre de la sesión de Claude sale SIEMPRE de esta línea, no se
-  calcula: es un contador distinto al de las tandas, porque una sesión
-  de Claude puede cubrir 2-3 tandas. Claude la actualiza al cerrar.)
-- Prácticas pendientes: #02 [~] corregida 1ª entrega, esperando la 2ª — repaso r1 de la #01 el 2026-09-05
+- Último punto estudiado: ShareLink 200 N User Guide — capítulo
+  "Operation Using a Mobile Device", explicadas págs. 17-20 de ESE
+  capítulo. Siguiente: pág. 21 (Present the Document or Photo).
+- Última tanda: Sesión #07 (2026-09-04)
+- PRÓXIMA SESIÓN: `/rename extron-s09`
+  (sale SIEMPRE de esta línea, nunca se calcula: es otro contador que
+  el de las tandas. Claude la actualiza al cerrar cada sesión.)
+- Pendientes: #02 [~] esperando 2ª entrega · repaso r1 de la #01 el 2026-09-05 · repaso del examen el 2026-09-07
 - Último triage (`/pendientes`): nunca todavía
-- Último examen (`/examen`): nunca todavía
+- Último examen (`/examen`): 2026-09-04 — 4 sólidos; flojo el MÉTODO de diagnóstico (empieza por lo caro)
 - Entorno verificado: 2026-08-27 — pdftotext 26.08.0, zathura, ttyper OK
 
 ## VOCABULARIO (solo si el material está en otro idioma; una fila por término nuevo)
@@ -72,6 +71,14 @@ Prácticas: ver EJERCICIOS.md.
 | Source Aspect Ratio | relación de aspecto de origen | Mantiene la proporción del dispositivo origen; si no coincide con la pantalla, agrega barras negras. |
 | Device Admin | administración del equipo | Acceso a la configuración interna (IP, contraseñas) desde el menú del software. |
 | Static / Random (login code) | estático / aleatorio | Static = código fijo, no cambia. Random = cambia solo. El Room File exige static, si no queda viejo. |
+| MirrorOp for Extron ShareLink | (nombre propio Extron) | La app de celular/tablet que PRESENTA archivos sueltos: fotos, documentos, web, cámara. |
+| MirrorOp Sender for Galaxy | (nombre propio Extron) | App solo para Samsung Galaxy que ESPEJA la pantalla entera del móvil, no archivos sueltos. |
+| Mirror (screen mirroring) | espejar la pantalla | Mandar TODO lo que se ve en el móvil, en vivo. Un espejo no elige qué reflejar: se ve también lo privado. |
+| Discovered receivers | receptores descubiertos | La lista de equipos que la app encontró sola en la red. El descubrimiento automático NO cruza subredes. |
+| Shot & Show | capturar y mostrar | Botón de la app móvil para presentar capturas de pantalla del propio dispositivo. |
+| File Sharing (iTunes) | compartir archivos | Sección donde se le copian archivos a una app concreta del iPhone/iPad desde la computadora. |
+| Tap to Download | tocá para descargar | Aviso de iOS en un adjunto de correo que todavía no se bajó al dispositivo. |
+| Open in ShareLink | abrir en ShareLink | Opción de iOS para mandar un archivo ya descargado directo a la app del ShareLink. |
 
 ============================================================
 
@@ -222,7 +229,38 @@ SESIÓN #06 — 2026-09-03 — ShareLink 200 N: cierre de Presenting/Software Me
 - PRÓXIMO PASO: capítulo siguiente del manual (a definir con la
   próxima tanda de material).
 
+SESIÓN #07 — 2026-09-04 — ShareLink 200 N: Operation Using a Mobile Device
+(capítulo "Operation Using a Mobile Device", págs. 17-20 de ESE capítulo)
+- Dos apps y NO hacen lo mismo: MirrorOp for Extron ShareLink presenta
+  ARCHIVOS elegidos (fotos, docs, web, cámara, capturas); MirrorOp
+  Sender for Galaxy (solo Samsung) ESPEJA la pantalla entera en vivo —
+  con esa se ve también lo privado que llegue al móvil.
+- El móvil solo entra por Wi-Fi (no tiene puerto de red): el WAP no es
+  opcional, es el único camino, y tiene que estar cableado a la misma
+  red que el ShareLink.
+- MISMA subred → se busca por SSID o IP en la lista de discovered
+  receivers. DISTINTA subred (misma red) → hay que escribir la IP A
+  MANO: el descubrimiento automático no cruza subredes. Ícono del
+  receptor VERDE = conectado.
+- Dropbox y Browser exigen INTERNET; el resto de la app solo necesita
+  la red local. Síntoma real: "funciona a medias" = falta salida a
+  internet, el equipo está bien.
+- Solo acepta Word, PowerPoint, Excel, PDF, JPEG y PNG. El archivo
+  tiene que estar YA en el móvil: las tres opciones (cable Android,
+  iTunes iOS, adjunto de correo) hacen todas lo mismo.
+- Ejercicios de la tanda: ninguno.
+- Dudas: 1ª bien (subred → buscar por IP). 2ª corregida: confundió
+  calidad de red con EXISTENCIA de salida a internet. El PDF sí usa
+  la red local; lo que no usa es internet. Y el equipo está sano.
+- Nota del profe: la Opción 2 (iTunes) está VIEJA — desde macOS
+  Catalina (2019) los iPhone/iPad se manejan desde el Finder; el
+  concepto es el mismo, el camino de clics ya no existe.
+- PRÁCTICAS CREADAS: ninguna (la #02 sigue abierta sin 2ª entrega).
+- PRÓXIMO PASO: págs. 21+ del capítulo "Operation Using a Mobile
+  Device" (Present the Document or Photo, Dropbox, Browser, Camera).
+
 ============================================================
+
 (ACÁ VAN LAS SESIONES — Claude agrega la SESIÓN #01 en la primera
 clase y sigue numerando hacia abajo, una sección por sesión, usando
 el formato CORTO de referencia del final del archivo. Cuando este

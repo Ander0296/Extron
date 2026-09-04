@@ -9,6 +9,16 @@ memorizar: es para no arrancar por el final.
       Se anota el síntoma y se resuelve cuando la sala esté libre.
 - [ ] Antes de cambiar cualquier configuración, anotá el valor
       anterior. Sin eso no hay vuelta atrás.
+- [ ] Si la sala está en uso y aun así te llaman, partí el trabajo en
+      dos: MITIGAR ahora y DIAGNOSTICAR después.
+      Mitigar = solo lo que no toca infraestructura ni cables: bajar un
+      ajuste de calidad, mover a una persona de lugar, cambiar de
+      entrada en el TV, reconectar la app.
+      Diagnosticar = todo lo que implique tocar cables, conexiones,
+      switches o configuración, y va cuando la sala esté libre.
+      Por qué importa: revisar "un segundito" la conexión de un punto
+      de acceso durante una reunión puede cortar esa reunión y todas
+      las que cuelguen de ese equipo.
 
 ## Paso 0 — Escribí el camino de la señal ANTES de mirar el equipo
 
@@ -23,6 +33,12 @@ memorizar: es para no arrancar por el final.
 
 - [ ] Escribí el síntoma exacto, sin interpretarlo ("el TV está en
       negro", no "es el HDMI").
+- [ ] Antes de formular UNA hipótesis: listá los datos que YA tenés a
+      la vista y usalos. Lo que ves en la pantalla, los LEDs, lo que
+      dice la hoja del montaje, lo que te contó quien llamó.
+      Por qué importa: preguntar por algo que ya te contestaron cuesta
+      una llamada, un viaje o una tarde. El dato servido es gratis.
+      Primero se lee lo que hay; después se pregunta por lo que falta.
 - [ ] Escribí varias hipótesis posibles, no una sola.
       Por qué importa: decir "está en negro, entonces es el HDMI" no es
       una hipótesis, es una conclusión sin prueba — y cierra la puerta
@@ -63,6 +79,29 @@ memorizar: es para no arrancar por el final.
       conectado al Wi-Fi no alcanza: la red de invitados suele estar
       aislada, y desde ahí no se ve el equipo.
 
+## Si la imagen LLEGA pero llega MAL (se congela, hace bloques, se corta)
+
+Este es otro síntoma, no el mismo. Si se ve algo, aunque se vea feo, el
+camino completo EXISTE y ya está probado de punta a punta. No busques
+cables sueltos ni equipos apagados: no es eso.
+
+Acá el problema es de CAPACIDAD, no de existencia: la red no da abasto
+para todo lo que se le está pidiendo.
+
+- [ ] Bajá la calidad de imagen en el software de quien presenta
+      (Normal en vez de Best). Es gratis, tarda segundos, lo hace el
+      propio presentador y no toca ni un cable. Empezá SIEMPRE por acá.
+- [ ] ¿El presentador está lejos del punto de acceso Wi-Fi, o hay
+      paredes de por medio? Sugerí que se acerque. También es gratis.
+- [ ] ¿Está pasando un video? El video en movimiento pide mucho más que
+      una presentación de diapositivas. Que se vea bien la presentación
+      y mal el video es coherente con falta de ancho de banda, no con
+      un equipo roto.
+- [ ] ¿Cuánta gente hay conectada a ese mismo Wi-Fi? Una sala llena
+      compite por el mismo aire.
+- [ ] Recién con la sala LIBRE: cobertura Wi-Fi, saturación de la red y
+      conexiones del punto de acceso.
+
 ## Antes de dar el diagnóstico por cerrado
 
 - [ ] ¿Podés decir en una frase QUÉ estaba cortado y POR QUÉ eso
@@ -77,4 +116,5 @@ memorizar: es para no arrancar por el final.
 | "Está en negro = es el HDMI" | El negro total apunta al tramo HDMI/TV, pero solo si NO hay ningún cartel en pantalla. Con cartel, el HDMI ya está probado. |
 | "Hay Wi-Fi, entonces hay red" | Estar en el Wi-Fi de invitados y ver el Wi-Fi de la sala no es lo mismo. Tienen que estar en la MISMA red. |
 | Equipo encendido = equipo funcionando | El LED de alimentación solo dice que le llega corriente. El de red dice si está hablando con la red. |
+| "Se ve mal, entonces algo está roto" | Si se ve algo, el camino entero funciona. Lo que falta es capacidad de red, no una pieza. Roto y saturado se arreglan distinto. |
 | Síntoma vs causa | "No se ve" es el síntoma. La causa está en algún punto del camino: hay que recorrerlo, no adivinarlo. |

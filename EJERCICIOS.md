@@ -47,6 +47,12 @@ D1 ordenado por distancia física y no por probabilidad×costo, y saltó el paso
 # REPASOS PROGRAMADOS (r1 ~3 días, r2 ~2 semanas, r3 ~1 mes)
 # ============================================================
 
+REPASO — EXAMEN #01, conceptos flojos — programado: 2026-09-07 — [ ] pendiente
+Arranque: ejercicios/repasos/r-examen01-metodo-y-subred.md (desde cero)
+Foco: (1) subred — las DOS mitades del concepto; (2) orden de diagnóstico y uso de
+los datos ya visibles; (3) qué se puede y qué no con la sala en uso; (4) el término
+"15-pin HD connector" del manual. (Sin respuestas acá: son las que se evalúan.)
+
 REPASO — PRÁCTICA #01 (r1) — programado: 2026-09-05 — [ ] pendiente
 Arranque: ejercicios/repasos/r1-01-trazado-sharelink-200n.md (desde cero, sin mirar el original)
 Foco: escribir el camino de la señal en forma "origen --medio--> destino" y

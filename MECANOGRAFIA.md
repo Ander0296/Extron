@@ -49,3 +49,9 @@ El checkbox Screen manda video a varios receptores, el radio button Audio a uno 
 
 s06 — Room File y login code estatico:
 El Room File exige login code estatico, si es aleatorio el archivo queda desactualizado.
+
+s07 — descubrimiento y subred en la app movil:
+Si el receptor esta en otra subred la app no lo descubre y hay que escribir la IP a mano.
+
+s07 — Dropbox y Browser necesitan internet:
+Presentar un archivo del movil usa la red local, pero Dropbox y Browser exigen salida a internet.
