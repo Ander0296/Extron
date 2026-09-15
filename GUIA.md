@@ -15,7 +15,7 @@ Prácticas: ver EJERCICIOS.md.
 - PRÓXIMA SESIÓN: `/rename extron-s09`
   (sale SIEMPRE de esta línea, nunca se calcula: es otro contador que
   el de las tandas. Claude la actualiza al cerrar cada sesión.)
-- Pendientes: #02 [~] esperando 2ª entrega · repaso r1 de la #01 el 2026-09-05 · repaso del examen el 2026-09-07
+- Pendientes: #02 [~] esperando 2ª entrega · repaso del examen VENCIDO (2026-09-07) · r1 bis de la #01 el 2026-09-18 (r1 salió mal)
 - Último triage (`/pendientes`): nunca todavía
 - Último examen (`/examen`): 2026-09-04 — 4 sólidos; flojo el MÉTODO de diagnóstico (empieza por lo caro)
 - Entorno verificado: 2026-08-27 — pdftotext 26.08.0, zathura, ttyper OK

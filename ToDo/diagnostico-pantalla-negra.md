@@ -28,6 +28,13 @@ memorizar: es para no arrancar por el final.
       Por qué importa: cada flecha de ese camino es un lugar donde la
       señal se puede cortar. Sin el camino escrito, no estás
       diagnosticando: estás adivinando.
+- [ ] Revisá la FORMA de cada línea: `origen --medio--> destino`. A cada
+      lado de la flecha tiene que haber un EQUIPO (portátil, punto de
+      acceso, switch, receptor, TV). Wi-Fi, cable de red y HDMI van
+      SOBRE la flecha, nunca como una caja.
+      Por qué importa: una lista de medios sueltos ("Wi-Fi -> Ethernet ->
+      HDMI") no dice entre qué dos equipos está cada tramo, y entonces no
+      sabés a qué equipo ir a mirar.
 
 ## Paso 1 — Separá SÍNTOMA de HIPÓTESIS
 
@@ -118,3 +125,4 @@ para todo lo que se le está pidiendo.
 | Equipo encendido = equipo funcionando | El LED de alimentación solo dice que le llega corriente. El de red dice si está hablando con la red. |
 | "Se ve mal, entonces algo está roto" | Si se ve algo, el camino entero funciona. Lo que falta es capacidad de red, no una pieza. Roto y saturado se arreglan distinto. |
 | Síntoma vs causa | "No se ve" es el síntoma. La causa está en algún punto del camino: hay que recorrerlo, no adivinarlo. |
+| "El receptor convierte todo" | Hay DOS conversores: la app en el dispositivo convierte la pantalla en datos de red, y el receptor de la sala convierte esos datos de vuelta en video HDMI. Si la app no convierte, al receptor no le llega nada. |

@@ -53,10 +53,10 @@ Foco: (1) subred — las DOS mitades del concepto; (2) orden de diagnóstico y u
 los datos ya visibles; (3) qué se puede y qué no con la sala en uso; (4) el término
 "15-pin HD connector" del manual. (Sin respuestas acá: son las que se evalúan.)
 
-REPASO — PRÁCTICA #01 (r1) — programado: 2026-09-05 — [ ] pendiente
-Arranque: ejercicios/repasos/r1-01-trazado-sharelink-200n.md (desde cero, sin mirar el original)
-Foco: escribir el camino de la señal en forma "origen --medio--> destino" y
-ordenar las hipótesis de diagnóstico dentro de cada rama.
+REPASO — PRÁCTICA #01 (r1 bis, intervalo acortado: el r1 salió MAL) — programado: 2026-09-18 — [ ] pendiente
+Arranque: lo crea /repaso ese día, escenario nuevo (desde cero, sin mirar el original)
+Foco: camino en forma "origen --medio--> destino"; qué convierte la señal en cada punta;
+prueba de C1 con el dato visible; hipótesis + verificación, ordenadas. 2º MAL seguido = RE-ESTUDIO.
 
 # ============================================================
 # CONCEPTOS DOMINADOS (entran al graduarse una práctica con r3 bien)
