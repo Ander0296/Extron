@@ -36,11 +36,20 @@ A1. Escribí el camino COMPLETO que recorre la imagen desde la pantalla
 
         origen --medio--> destino
 
+Recorre el siguiente camino
+Dispositivo -> Wifi -> Acces point -> Rack ethernet -> Ethernet -> Sharelink 200 N -> HDMI -> Pantalla
+
 A2. Marcá en qué punto exacto de ese camino la imagen DEJA de ser video
     y pasa a ser otra cosa, y en qué punto vuelve a ser video.
 
+En el punto en el que el dispositivo lo manda por wifi manda el video en forma de datos,
+hasta llegar al sharelink, el sharelink lee esos datos y los transmite en forma de video pasandolo por el cable HDMI
+
 A3. En una línea: ¿qué hace que eso sea posible, o sea, quién convierte
     la pantalla del portátil en lo que viaja por la red?
+
+Eso es posible gracias al sharelink, es un dispositivo creado para realizar transmisión de imagen sin necesidad de cables
+Para ello el access point por el que viajan los datos debe coincidir la conexión a donde está conectado el sharelink, es decir compartir la misma RED
 
 # ============================================================
 # PARTE B — Los dos tramos
@@ -49,9 +58,14 @@ A3. En una línea: ¿qué hace que eso sea posible, o sea, quién convierte
 B1. Ese camino se parte en dos tramos de naturaleza distinta. Nombralos
     y decí dónde está la frontera entre los dos.
 
+Tramo de datos
+Tramo de video
+La forntera está en el propio sharelink que es quien transforma esos datos en video
+
 B2. Por cada tramo, escribí una cosa que pueda fallar ahí y que NO pueda
     fallar en el otro.
 
+En los datos puede fallar que estamos conectados a otra red, y el sharelink nos está dando imagen
 # ============================================================
 # PARTE C — Diagnóstico
 # ============================================================
@@ -61,13 +75,20 @@ pantalla de espera del ShareLink, pero él no consigue proyectar.
 
 C1. Con solo ese dato, ¿qué tramo del camino queda DESCARTADO, y cuál
     es la prueba que lo descarta? Justificá.
+Es la red a la que está conectada, el tramo de imagen funciona perfectamente y el sharelink está con los leds encendidos de la red
+primero verificar en qué red está conectado el dispositivo.
 
 C2. Escribí el árbol de hipótesis del tramo que queda, ORDENADO de lo
     más probable y más barato de verificar a lo menos. Una hipótesis
     por línea, y al lado QUÉ verificás para descartarla.
+1. Revisar leds del sharelink.
+2. revisar red del dispositivo.
+3. Revisar cable de red tanto del sharelink como el access point
+4. Revisar el rack
 
 C3. De tu lista, señalá cuál es la causa más frecuente en la vida real
     y explicá en una línea por qué pasa tanto.
+La que más frecuencia ocurre es cuando se intentan conectar estando en una red diferente a la que está el sharelink
 
 # ============================================================
 # CÓMO PROBAR TU TRABAJO ANTES DE ENTREGAR
